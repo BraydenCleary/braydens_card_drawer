@@ -22,6 +22,8 @@
 		C656E3FE18FB12C0008C7E02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C656E3DD18FB12C0008C7E02 /* UIKit.framework */; };
 		C656E40618FB12C0008C7E02 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C656E40418FB12C0008C7E02 /* InfoPlist.strings */; };
 		C656E40818FB12C0008C7E02 /* braydens_card_dawerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C656E40718FB12C0008C7E02 /* braydens_card_dawerTests.m */; };
+		C656E41318FB270F008C7E02 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = C656E41218FB270F008C7E02 /* Card.m */; };
+		C656E41718FB2AC8008C7E02 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = C656E41618FB2AC8008C7E02 /* PlayingCard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		C656E40318FB12C0008C7E02 /* braydens_card_dawerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "braydens_card_dawerTests-Info.plist"; sourceTree = "<group>"; };
 		C656E40518FB12C0008C7E02 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C656E40718FB12C0008C7E02 /* braydens_card_dawerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = braydens_card_dawerTests.m; sourceTree = "<group>"; };
+		C656E41118FB270F008C7E02 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Models/Card.h; sourceTree = "<group>"; };
+		C656E41218FB270F008C7E02 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Models/Card.m; sourceTree = "<group>"; };
+		C656E41518FB2AC8008C7E02 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = Models/PlayingCard.h; sourceTree = "<group>"; };
+		C656E41618FB2AC8008C7E02 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Models/PlayingCard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +120,11 @@
 		C656E3DF18FB12C0008C7E02 /* braydens_card_dawer */ = {
 			isa = PBXGroup;
 			children = (
-				C656E3E818FB12C0008C7E02 /* CardGameAppDelegate.h */,
-				C656E3E918FB12C0008C7E02 /* CardGameAppDelegate.m */,
 				C656E3EB18FB12C0008C7E02 /* Main_iPhone.storyboard */,
 				C656E3EE18FB12C0008C7E02 /* Main_iPad.storyboard */,
 				C656E3F118FB12C0008C7E02 /* CardGameViewController.h */,
 				C656E3F218FB12C0008C7E02 /* CardGameViewController.m */,
+				C656E41418FB278D008C7E02 /* Models */,
 				C656E3F418FB12C0008C7E02 /* Images.xcassets */,
 				C656E3E018FB12C0008C7E02 /* Supporting Files */,
 			);
@@ -129,6 +134,8 @@
 		C656E3E018FB12C0008C7E02 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C656E3E818FB12C0008C7E02 /* CardGameAppDelegate.h */,
+				C656E3E918FB12C0008C7E02 /* CardGameAppDelegate.m */,
 				C656E3E118FB12C0008C7E02 /* braydens_card_dawer-Info.plist */,
 				C656E3E218FB12C0008C7E02 /* InfoPlist.strings */,
 				C656E3E518FB12C0008C7E02 /* main.m */,
@@ -153,6 +160,17 @@
 				C656E40418FB12C0008C7E02 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C656E41418FB278D008C7E02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C656E41118FB270F008C7E02 /* Card.h */,
+				C656E41218FB270F008C7E02 /* Card.m */,
+				C656E41518FB2AC8008C7E02 /* PlayingCard.h */,
+				C656E41618FB2AC8008C7E02 /* PlayingCard.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +275,8 @@
 				C656E3EA18FB12C0008C7E02 /* CardGameAppDelegate.m in Sources */,
 				C656E3F318FB12C0008C7E02 /* CardGameViewController.m in Sources */,
 				C656E3E618FB12C0008C7E02 /* main.m in Sources */,
+				C656E41718FB2AC8008C7E02 /* PlayingCard.m in Sources */,
+				C656E41318FB270F008C7E02 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
